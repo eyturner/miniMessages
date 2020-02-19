@@ -1,0 +1,12 @@
+<h1>{{title}}</h1>
+<p>Welcome to {{title}}</p>
+<ul class="message-board">
+  {{#each messages}}
+  <li>
+    {{this.user}} at {{this.added}} <br/>
+    <strong>{{this.text}}</strong>
+  </li>
+  {{/each}}
+</ul>
+
+<a href = '/new'>New Message</a>
